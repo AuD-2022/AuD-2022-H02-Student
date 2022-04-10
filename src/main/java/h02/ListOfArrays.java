@@ -31,6 +31,7 @@ public class ListOfArrays<T> {
      * @param sequence The elements to be added to the list.
      */
     public ListOfArrays(T[] sequence) {
+        throw new RuntimeException("H1 - not implemented"); // TODO: H1 - remove if implemented
     }
 
     /**
@@ -39,7 +40,7 @@ public class ListOfArrays<T> {
      * @return The iterator of type ListOfArraysIterator.
      */
     public ListOfArraysIterator<T> iterator() {
-        return null;
+        throw new RuntimeException("H2 - not implemented"); // TODO: H2 - remove if implemented
     }
 
     /**
@@ -51,6 +52,7 @@ public class ListOfArrays<T> {
      * @throws IndexOutOfBoundsException    If the given index is not within the bounds of this list.
      */
     public void insert(Collection<T> collection, int i) throws IndexOutOfBoundsException {
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -60,6 +62,7 @@ public class ListOfArrays<T> {
      * @throws IndexOutOfBoundsException    If an offset is negative.
      */
     public void insert(Iterator<ElementWithIndex<T>> iterator) throws IndexOutOfBoundsException {
+        throw new RuntimeException("H6 - not implemented"); // TODO: H6 - remove if implemented
     }
 
     /**
@@ -71,6 +74,6 @@ public class ListOfArrays<T> {
      * @return                      The extracted elements as a ListOfArrays object.
      */
     public ListOfArrays<T> extract(int i, int j) {
-        return null;
+        throw new RuntimeException("H5 - not implemented"); // TODO: H5 - remove if implemented
     }
 }

@@ -22,6 +22,7 @@ public class ElementWithIndex<T> {
      * @param index     The index to be contained in this object.
      */
     public ElementWithIndex(T element, int index) {
+        throw new RuntimeException("H6 - not implemented"); // TODO: H6 - remove if implemented
     }
 
     /**
@@ -30,7 +31,7 @@ public class ElementWithIndex<T> {
      * @return The element.
      */
     public T getElement() {
-        return null;
+        throw new RuntimeException("H6 - not implemented"); // TODO: H6 - remove if implemented
     }
 
     /**
@@ -39,6 +40,6 @@ public class ElementWithIndex<T> {
      * @return The index.
      */
     public int getIndex() {
-        return 0;
+        throw new RuntimeException("H6 - not implemented"); // TODO: H6 - remove if implemented
     }
 }

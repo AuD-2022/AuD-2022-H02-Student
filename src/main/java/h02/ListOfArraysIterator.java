@@ -15,6 +15,7 @@ public class ListOfArraysIterator<T> {
      * @param head The head of the list to iterate over.
      */
     public ListOfArraysIterator(ListOfArraysItem<T> head) {
+        throw new RuntimeException("H2 - not implemented"); // TODO: H2 - remove if implemented
     }
 
     /**
@@ -23,7 +24,7 @@ public class ListOfArraysIterator<T> {
      * @return True iff there is another element.
      */
     public boolean hasNext() {
-        return false;
+        throw new RuntimeException("H2 - not implemented"); // TODO: H2 - remove if implemented
     }
 
     /**
@@ -33,6 +34,6 @@ public class ListOfArraysIterator<T> {
      * @throws NoSuchElementException If there is no next element.
      */
     public T next() throws NoSuchElementException {
-        return null;
+        throw new RuntimeException("H2 - not implemented"); // TODO: H2 - remove if implemented
     }
 }
