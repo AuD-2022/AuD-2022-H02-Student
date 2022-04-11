@@ -18,8 +18,9 @@ public class ElementWithIndex<T> {
 
     /**
      * Constructs a new ElementWithIndex object with the given element and index.
-     * @param element   The element to be contained in this object.
-     * @param index     The index to be contained in this object.
+     *
+     * @param element The element to be contained in this object.
+     * @param index   The index to be contained in this object.
      */
     public ElementWithIndex(T element, int index) {
         throw new RuntimeException("H6 - not implemented"); // TODO: H6 - remove if implemented
