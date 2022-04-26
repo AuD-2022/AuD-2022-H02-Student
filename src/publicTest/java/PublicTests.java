@@ -28,14 +28,15 @@ public class PublicTests {
 
     @Test
     void testWithIterator() {
-        var list = new ListOfArrays<>(new Object[] {1, 3, 5});
+        var list = new ListOfArrays<>(new Object[] {1, 3, 6});
 
         list.insert(List.of(
             new ElementWithIndex<Object>(2, 1),
-            new ElementWithIndex<Object>(4, 3)
+            new ElementWithIndex<Object>(4, 1),
+            new ElementWithIndex<Object>(5, 0)
         ).iterator());
 
-        assertIterableEquals(List.of(1, 2, 3, 4, 5), () ->
+        assertIterableEquals(List.of(1, 2, 3, 4, 5, 6), () ->
             new ListOfArraysIteratorWrapper<>(list));
     }
 
