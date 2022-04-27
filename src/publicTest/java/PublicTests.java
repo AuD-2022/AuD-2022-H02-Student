@@ -48,7 +48,7 @@ public class PublicTests {
         assertIterableEquals(List.of(2, 3), () ->
             new ListOfArraysIteratorWrapper<>(extract));
 
-        assertIterableEquals(List.of(1, 2, 5), () ->
+        assertIterableEquals(List.of(1, 4, 5), () ->
             new ListOfArraysIteratorWrapper<>(list));
     }
 }
