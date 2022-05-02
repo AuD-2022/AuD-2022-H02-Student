@@ -45,7 +45,7 @@ public class PublicTests {
         var list = new ListOfArrays<>(new Object[] {1, 2, 3, 4, 5});
         var extract = list.extract(2, 3);
 
-        assertIterableEquals(List.of(2, 3), () ->
+        assertIterableEquals(List.of(3, 4), () ->
             new ListOfArraysIteratorWrapper<>(extract));
 
         assertIterableEquals(List.of(1, 2, 5), () ->
