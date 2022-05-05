@@ -1,5 +1,5 @@
-import h02.ElementWithIndex;
-import h02.ListOfArrays;
+package h02;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
