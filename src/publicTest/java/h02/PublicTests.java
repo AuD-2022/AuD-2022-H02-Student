@@ -2,6 +2,7 @@ package h02;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Iterator;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -50,5 +51,23 @@ public class PublicTests {
 
         assertIterableEquals(List.of(1, 2, 5), () ->
             new ListOfArraysIteratorWrapper<>(list));
+    }
+
+    public static class ListOfArraysIteratorWrapper<T> implements Iterator<T> {
+
+        private final ListOfArraysIterator<T> iterator;
+        public ListOfArraysIteratorWrapper(ListOfArrays<T> listOfArrays) {
+            iterator = listOfArrays.iterator();
+        }
+
+        @Override
+        public boolean hasNext() {
+            return iterator.hasNext();
+        }
+
+        @Override
+        public T next() {
+            return iterator.next();
+        }
     }
 }
